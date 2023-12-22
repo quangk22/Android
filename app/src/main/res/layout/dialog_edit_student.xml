@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/editTenSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Sinh Viên"
+        android:background="@drawable/rounded_edittext"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/editMasv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã sinh viên"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/editMaLopSv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã lớp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/editTenLopSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ten lớp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="15dp"/>
+</LinearLayout>

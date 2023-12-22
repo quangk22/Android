@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListStudentActivity">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF6200EE">
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="?attr/homeAsUpIndicator"
+            android:background="@null"
+            app:tint="@android:color/white"
+            android:onClick="QuayLai"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Danh sách lớp"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextSearchST"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/title"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/search"
+        android:ems="10"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Tìm kiếm"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonAddCStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/editTextSearchST"
+        android:background="@null"
+        app:srcCompat="@drawable/add" />
+
+    <ListView
+        android:id="@+id/listStudent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editTextSearchST"
+      />
+
+
+</RelativeLayout>

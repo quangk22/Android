@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateStudentActivity">
+
+    <ImageView
+        android:id="@+id/imageAvatarUpdate"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@drawable/ic_launcher_background"/>
+
+    <Button
+        android:id="@+id/buttonChupHinhUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chụp hình"
+        android:layout_toRightOf="@+id/imageAvatarUpdate"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonChonHinhUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonChupHinhUpdate"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/imageAvatarUpdate"
+        android:text="Chọn hình"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextNhapTenUpdate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageAvatarUpdate"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_edittext"
+        android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/editTextMaSVUpdate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextNhapTenUpdate"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="54dp"
+            android:ems="10"
+            android:hint="Nhập mã Sinh viên"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_edittext"
+            android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextMaLopStuUpdate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMaSVUpdate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="54dp"
+        android:ems="10"
+        android:hint="Nhập mã lớp"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_edittext"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/buttonLuuUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMaLopStuUpdate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="238dp"
+        android:backgroundTint="@color/teal_200"
+        android:hint="Lưu"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/buttonQuyLaiUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMaLopStuUpdate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="98dp"
+        android:backgroundTint="@color/teal_200"
+        android:hint="Quay lại"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

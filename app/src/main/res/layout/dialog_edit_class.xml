@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/editMaLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã lớp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/editTenLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên lớp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:padding="15dp"/>
+</LinearLayout>
