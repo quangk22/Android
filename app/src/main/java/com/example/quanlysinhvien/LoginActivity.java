@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 }else if (etxtUser.getText().toString().equals("admin") && etxtPassWord.getText().toString().equals("123")){
                     Toast.makeText(getApplication(),"Đăng nhập thành công",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(LoginActivity.this,ManagerClassActivity.class);
+                    Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
                     intent.putExtra("USERNAME",etxtUser.getText().toString());
                     startActivity(intent);
                     finish();

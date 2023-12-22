@@ -91,4 +91,9 @@ public class ManagerClassActivity extends AppCompatActivity {
         // Cập nhật danh sách hiển thị
         adapter.setData(filteredList);
     }
+    public void QuayLai(View view) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }
